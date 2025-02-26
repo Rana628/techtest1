@@ -1,0 +1,57 @@
+node_modules/
+.env
+.vscode/
+dist/
+build/
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+logs/*.log
+logs/**/*.log
+debug.log
+error.log
+output.log
+
+# Runtime files
+pids
+*.pid
+*.seed
+*.pid.lock
+*.gz
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build and Dist Files
+dist/
+build/
+.cache/
+
+# Editor & OS Specific Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Git & Dependency Caching
+.git/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Next.js specific
+.next/
+out/
+.vercel/
