@@ -13,11 +13,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-mongoose.connect("mongodb://mongo:AtVEibLkzNbOSzpdHiWsThXGgpqrxfCS@gondola.proxy.rlwy.net:17361", {
-    useNewUrlParser: true
-})
-.then( () => console.log("MongoDb is connected"))
-.catch ( err => console.log(err) )
+mongoose.connect("mongodb://mongo:AtVEibLkzNbOSzpdHiWsThXGgpqrxfCS@gondola.proxy.rlwy.net:17361")
+ .then( () => console.log("MongoDb is connected"))
+ .catch ( err => console.log(err) )
 
 app.use('/', route);
 

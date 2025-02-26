@@ -32,4 +32,4 @@ class ApiError extends Error {
     }
 }
 
-module.exports.ApiError = ApiError
+module.exports = ApiError

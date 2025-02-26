@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const logger = require("../logger/winston.logger.js");
-const { ApiError } = require("../utils/ApiError.js");
+const ApiError = require("../utils/ApiError.js");
 const { asyncHandler } = require("../utils/asyncHandler.js");
 const { removeUnusedMulterImageFilesOnError } = require("../utils/helpers.js");
 
@@ -46,4 +46,6 @@ const errorHandler = (err, req, res, next) => {
   return res.status(error.statusCode).json(response);
 };
 
-module.exports.errorHandler = errorHandler
+module.exports = {
+    errorHandler,
+  };
